@@ -21,12 +21,6 @@
     box-sizing: border-box;
   }
 
-
-
-
-
-
-
   #header {
     height: 12vh;
     line-height: 12vh;
@@ -41,7 +35,7 @@
     font-style: italic;
   }
   #header #logo:before {
-    content: "Dibujos";
+    content: "Diseños";
     color: #f381a8;
     text-transform: uppercase;
     font-weight: 100;

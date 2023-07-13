@@ -2,18 +2,16 @@
 
 
 body {
-    /*background: black; */
-    background-image: url(./img/cemento.jpg);
+    background: black;   
 }
 
 /**** frase de humo   ****/
 .frase {
-    padding-top: 80px;
-    /*background: black;*/
-    overflow:hidden;
-    font: 3.2vw/100vh 'Indie Flower', cursive;
-    /*font: 3.2vw/100vh "Finger Paint";*/
+    padding-top: 80px;   
+    overflow: hidden;
+    font: 3.2vw/100vh 'Indie Flower';   
     text-align: center;
+    text-transform: uppercase;
     line-height: 50px;
     color: transparent;
     backface-visibility: hidden;
@@ -119,10 +117,10 @@ canvas {
 }
 
 p {
-    font-family:  "Finger Paint";
+    font-family: 'Indie Flower';   
     display: inline-block; 
     position: absolute;
-    font-size: small;  
+    font-size: medium;  
     right: 6%;
     bottom: 1%;
     color: #fdb707;  
@@ -178,14 +176,9 @@ p:hover {
     height: 55px;
 }
 
-
-
-
-
 .st1:hover , .st2:hover, .st3:hover , .st4:hover {
     cursor: pointer;
-    opacity: .5;
-  
+    opacity: .5;  
 }
 
 @keyframes stid {
