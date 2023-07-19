@@ -1,17 +1,22 @@
+/*@import url(//fonts.googleapis.com/css?family=Vibur);*/
 @import url("https://fonts.googleapis.com/css?family=Finger+Paint");
-
-
+html,body{
+  height:100%
+}
 body {
-    background: black;   
+    background-color: black;  
+    background-size:cover;
+    margin:0
 }
 
 /**** frase de humo   ****/
 .frase {
-    padding-top: 80px;   
-    overflow: hidden;
-    font: 3.2vw/100vh 'Indie Flower';   
+    padding-top: 70px;
+    /*background: black;*/
+    overflow:hidden;
+    font: 3.2vw/100vh "Finger Paint", cursive;
+    /*font: 3.2vw/100vh "Finger Paint";*/
     text-align: center;
-    text-transform: uppercase;
     line-height: 50px;
     color: transparent;
     backface-visibility: hidden;
@@ -19,7 +24,7 @@ body {
 
 span {   
     display: inline-block;
-    text-shadow: 0 0 0 #fdb707;
+    text-shadow: 0 0 0 gold;
     animation: smoky 10s 5s both;
 }
 
@@ -29,7 +34,7 @@ span:nth-child(even){
 
 @keyframes smoky {
     60% {
-    text-shadow: 0 0 40px #fdb707;
+    text-shadow: 0 0 40px gold;
   }
   to {
     transform:
@@ -37,21 +42,21 @@ span:nth-child(even){
       rotate(-1deg)
       skewX(-2deg)
       scale(1.5);
-    text-shadow: 0 0 20px #fdb707;
+    text-shadow: 0 0 20px gold;
     opacity: 0;
   }
 }
 
 @keyframes smoky-mirror {
   60% {
-    text-shadow: 0 0 40px #fdb707; }
+    text-shadow: 0 0 40px gold; }
   to {
     transform:
       translate3d(12rem,-3rem,0)
       rotate(-1deg) 
       skewX(-2deg)
       scale(1);
-     text-shadow: 0 0 20px #fdb707;
+     text-shadow: 0 0 20px gold;
     opacity: 0;
   }
 }
@@ -91,11 +96,12 @@ main {
 @media (max-width: 423px) {
 main {
     padding-top: 10px;
-    top:0;left:0;
+    top:0;
+    left:0;
     right:0;
     bottom:0;
   }
-  .frase {  
+.frase {  
     padding-top: 40px;  
     overflow:hidden;
     font: 4.8vw/180vh "Finger Paint";
@@ -106,34 +112,146 @@ main {
     }
 }
 
+
+
+/*****  mari1dog   *****/
+
+.logo {
+    text-align: center;
+    width: 65%;
+    height: 73px;
+    margin: auto;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    user-select: none;
+}
+
+.logo b{
+    font: 400 9vh "Finger Paint";  
+    color: gold;    
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+.logo b span{
+  animation: blink linear infinite 2s;
+}
+.logo b span:nth-of-type(2){
+  animation: blink linear infinite 3s;
+}
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79%{
+     color: #333;
+  }
+  80% {
+    
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+
+@media (max-width: 636px) {
+    .logo {        
+        width: 79%;
+        height: 123px;
+    }
+    span {
+        display: inline;
+    }
+}
+
+.logoviolet {
+  padding-top: 1%;
+  padding-left: 93px;
+  width: 100px;
+  height: auto;
+}
+
+
 /****  fuego de color   *****/
   
 canvas {
-    display: block; 
-    left: 50%;
-    margin: -150px 0 0 -150px;
-    position: absolute;
-    top: 74%;
+  display: block; 
+  left: 50%;
+  margin: -150px 0 0 -150px;
+  position: absolute;
+  top: 74%;
 }
 
 p {
-    font-family: 'Indie Flower';   
-    display: inline-block; 
-    position: absolute;
-    font-size: medium;  
-    right: 6%;
-    bottom: 1%;
-    color: #fdb707;  
+  font-family: 'Indie Flower';   
+  display: inline-block; 
+  position: absolute;
+  font-size: medium;  
+  right: 6%;
+  bottom: 1%;
+  color: #fdb707;  
 }
 p:hover {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+
+/* follow me @nodws */
+#btn-twtr{
+  clear:both;
+  color:#4095f0;
+  border:2px solid;
+  border-radius:3px;
+  text-align:center;
+  text-decoration:none;
+  display:block;
+  font-family:sans-serif;
+  font-size:14px;
+  width:13em;
+  padding:5px 10px;
+  font-weight:600;
+  position:absolute;
+  bottom:20px;
+  left:0;
+  right:0;
+  margin:0 auto;
+  background:rgba(0,0,0,0.2);
+  box-shadow:0 0 0px 3px rgba(0,0,0,0.2);
+  color:blue;
+  opacity:1;  
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+#btn-twtr:hover {
+    color:rgb(246, 88, 199);
+    opacity:1;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
 }
 
 /****  roldanas   *****/
 
-.st{
-    left: 45%;
-    top: 42%;
+/*.st{
+    left: 46%;
+    top: 40%;
     position: relative;
     display: block;
     width: 100px;  
@@ -176,6 +294,10 @@ p:hover {
     height: 55px;
 }
 
+
+
+
+
 .st1:hover , .st2:hover, .st3:hover , .st4:hover {
     cursor: pointer;
     opacity: .5;  
@@ -190,8 +312,4 @@ p:hover {
     to{
       transform:rotate(-360deg);
     }
-}
-  
-
-
-
+}*/
