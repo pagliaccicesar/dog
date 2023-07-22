@@ -98,7 +98,7 @@
   .redes {
     z-index: 2;
     position: fixed;
-    right: 20px;
+    right: 2px;
     top:  0px;
     display: flex;
     margin: 0;
@@ -158,10 +158,12 @@ main {
     display: flex;
     font-size: 1.5em;
     color: rgb(88 199 250 / 0%);
-    cursor: pointer;
-    font-family: cursive;
+    cursor: pointer;    
   }
-  
+  .diseno1 , .diseno2 {
+    width: 350px;
+    height: auto;
+  }
   .card:hover {
     color: rgb(88 199 250 / 100%);
     transition: color 1s;
@@ -222,21 +224,22 @@ main {
     }
   }
   
-  a {
+  /*a {
     color: #212534;
     text-decoration: none;
     font-family: sans-serif;
     font-weight: bold;
     margin-top: 2rem;
-  }
+  }*/
 
 
 
   /**** Footer *****/
 
 #footer {  
+  display: flex;
   flex-direction: row;
-    display:inline-flex;
+    /*display:inline-flex;*/
     position: relative;
     top: 200px;
     left: 10px;
