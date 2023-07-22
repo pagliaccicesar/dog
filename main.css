@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Finger+Paint");
 
-:root {
-  /* Base font size */
+:root { 
   font-size: 10px;   
   --neon-color-gold: rgb(255, 215, 0);
   --neon-text-color: rgb(255, 145, 0);
@@ -9,28 +8,28 @@
 }
 
 body {  
-  display: flex;
-  justify-content: center;
-  align-items: center;  
-  background: #000;
-  min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background: #000;
+    min-height: 50vh;
 }
 
 /**** frase de humo   ****/
 .frase {
-  padding-top: 50px;  
-  overflow:hidden;
-  font: 3.2vw/1vh "Finger Paint", cursive;  
-  text-align: center;
-  line-height: 50px;
-  color: transparent;
-  backface-visibility: hidden;
+    padding-top: 50px;  
+    overflow:hidden;
+    font: 3.2vw/1vh "Finger Paint", cursive;  
+    text-align: center;
+    line-height: 50px;
+    color: transparent;
+    backface-visibility: hidden;
 }
 
 span {   
-  display: inline-block;
-  text-shadow: 0 0 0 var(--neon-color-gold);
-  animation: smoky 10s 5s both;
+    display: inline-block;
+    text-shadow: 0 0 0 var(--neon-color-gold);
+    animation: smoky 10s 5s both;
 }
 
 span:nth-child(even){
@@ -61,59 +60,55 @@ to {
     rotate(-1deg) 
     skewX(-2deg)
     scale(1);
-   text-shadow: 0 0 20px var(--neon-color-gold);
+  text-shadow: 0 0 20px var(--neon-color-gold);
   opacity: 0;
 }
 }
 
 @for $item from 1 through 21 {
 span:nth-of-type(#{$item}){ 
-  animation-delay: #{(3 + ($item/10))}s; 
-}
+    animation-delay: #{(3 + ($item/10))}s; 
+  }
 } 
 
 
 @media (max-width: 636px) {
 main {
-  padding-top:10px;
-  top:0;left:0;
-  right:0;
-  bottom:0;
+    padding-top:10px;
+    top:0;left:0;
+    right:0;
+    bottom:0;
+  }
 }
-}
-@media (max-width: 636px) {
-.fond   {
-  padding-top: 5px;
-}
-}
+
 
 @media (max-width: 636px) {
 .frase {    
-  overflow:hidden;
-  font: 4.2vw/180vh "Finger Paint";
-  text-align: center;
-  line-height: 40px;
-  color: transparent;
-  backface-visibility: hidden;    
+    overflow:hidden;
+    font: 4.2vw/180vh "Finger Paint";
+    text-align: center;
+    line-height: 40px;
+    color: transparent;
+    backface-visibility: hidden;    
   }
 }
 
 @media (max-width: 423px) {
 main {
-  padding-top: 1px;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
+    padding-top: 1px;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
 }
 .frase {  
-  padding-top: 4px;  
-  overflow:hidden;
-  font: 4.8vw/180vh "Finger Paint";
-  text-align: center;
-  line-height: 40px;
-  color: transparent;
-  backface-visibility: hidden;    
+    padding-top: 4px;  
+    overflow:hidden;
+    font: 4.8vw/180vh "Finger Paint";
+    text-align: center;
+    line-height: 40px;
+    color: transparent;
+    backface-visibility: hidden;    
   }
 }
 
@@ -121,30 +116,30 @@ main {
 /****  neon    ****/
 
 h1 {   
-  font: 2.2vw/5vh "Finger Paint";
-  font-size: 7rem;
-  font-weight: 200; 
-  color: var(--neon-color-gold); 
-  text-align: center; 
-  padding: 4rem 6rem 5.5rem;
-  border: 0.4rem solid violet;
-  border-radius: 2rem;
-  text-transform: uppercase;
-  animation: flicker 1.5s infinite alternate;     
+    font: 2.2vw/5vh "Finger Paint";
+    font-size: 7rem;
+    font-weight: 200; 
+    color: var(--neon-color-gold); 
+    text-align: center; 
+    padding: 4rem 6rem 5.5rem;
+    border: 0.4rem solid violet;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    animation: flicker 1.5s infinite alternate;     
 }
 
 h1::-moz-selection {
-  background-color: var(--neon-border-color);
-  color: var(--neon-text-color);
+    background-color: var(--neon-border-color);
+    color: var(--neon-text-color);
 }
 
 h1::selection {
-  background-color: var(--neon-border-color);
-  color: var(--neon-text-color);
+    background-color: var(--neon-border-color);
+    color: var(--neon-text-color);
 }
 
 h1:focus {
-  outline: none;
+    outline: none;
 }
 
 /* Animate neon flicker */
@@ -182,22 +177,23 @@ h1:focus {
         font-weight: 100;
         /*padding: 4rem 6rem 5.5rem;*/
     }
+    footer {
+        padding-top: 70px;
+        gap: 80px;
+    }
 }
 
 
 /***  footer  ****/
 
 footer {  
-  top: 60px;
-  display: flex;  
-  gap: 100px;
-  justify-content:space-evenly;
-  
+    top: 60px;
+    display: flex;  
+    gap: 100px;
+    justify-content:space-evenly;  
 }
 
-.logoviolet {
-    /*padding-top: 1%;
-    padding-left: 93px;*/
+.logoviolet {    
     width: 100px;
     height: auto;
 }
